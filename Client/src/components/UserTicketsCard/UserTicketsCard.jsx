@@ -170,20 +170,6 @@ const UserTicketsCard = () => {
                 </select>
             </div>
             <div>
-                <label>Assigned To:</label>
-                <select
-                    value={searchAssignedTo}
-                    onChange={(e) => setSearchAssignedTo(e.target.value)}
-                >
-                    <option value="">All</option>
-                    {users.map(user => (
-                        <option key={user._id} value={user._id}>
-                            {user.firstname} {user.lastname}
-                        </option>
-                    ))}
-                </select>
-            </div>
-            <div>
                 <label>Priority:</label>
                 <select
                     value={searchPriority}

@@ -59,16 +59,6 @@ const TicketFormCard = () => {
     };
 
     useEffect(() => {
-        const token = localStorage.getItem('token');
-        if (!token) {
-            navigate('/error');
-        }
-        if (error) {
-            alert(error);
-        }
-    }, [error]);
-
-    useEffect(() => {
         if (successMessage) {
             alert(successMessage);
         }
