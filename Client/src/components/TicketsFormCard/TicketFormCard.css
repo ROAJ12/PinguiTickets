@@ -1,0 +1,11 @@
+.image-wrapper {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 200px; /* Set a maximum width to prevent it from becoming too large */
+    margin: 0 auto; /* Center the image horizontally */
+    overflow: hidden; /* Hide overflowing content */
+}
+.image-wrapper img {
+    width: 100%; /* Occupy the full width of the container */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+    display: block; /* Remove default inline display */
+}
